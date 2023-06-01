@@ -20,6 +20,7 @@
   right: 0;
   display: flex;
   flex-direction: column;
+  color:rgb(19,80,128);
 }
 
 .content {
@@ -31,58 +32,58 @@
 }
 
 .card {
-  display: block;
   width: 48%;
-  height: 254px;
+  /* height: 254px; */
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.card.red {
+.card.red .image {
   background-color: var(--red-bg-color);
 }
 
-.card.grey {
+.card.grey .image{
   background-color: var(--grey-bg-color);
 }
 
-.card.purple {
+.card.purple .image{
   background-color: var(--purple-bg-color);
 }
 
 .card .text {
-  width: 40%;
-  flex-shrink: 1;
-  height: 100%;
-  padding: 80px 10px 0 40px;
+  width: 100%;
+  padding: 10px;
   overflow: hidden;
 }
 
 .card .image {
-  height: 100%;
-  width: 60%;
-  flex-shrink: 0;
+  width: 100%;
+  height: 240px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   overflow: hidden;
 }
 
-.card .image.align-left {
-  justify-content: flex-start;
-}
-
-.card .image.align-right {
-  justify-content: flex-end;
-}
-
-.card .image.fill-height img {
+.card .image img {
   height: 100%;
   object-fit: cover;
 }
 
-@media (max-width: 450px) {
+.card .image.narrow img {
+  width:250px;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    position:static
+  }
+}
+
+@media (max-width: 800px) {
   .content {
     justify-content: space-around;
   }
@@ -94,3 +95,4 @@
     padding-left: 20px;
   }
 }
+
