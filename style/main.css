@@ -39,15 +39,6 @@
   margin-bottom: 20px;
 }
 
-@media (max-width: 900px) {
-  .content {
-    justify-content: space-around;
-  }
-  .card {
-    width: 80%;
-  }
-}
-
 .card.red {
   background-color: var(--red-bg-color);
 }
@@ -88,4 +79,18 @@
 
 .card .image.fill-height img {
   height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 450px) {
+  .content {
+    justify-content: space-around;
+  }
+  .card {
+    width: 100%;
+  }
+
+  .card .text {
+    padding-left: 20px;
+  }
 }

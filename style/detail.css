@@ -33,8 +33,11 @@
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 20px;
   align-items: center;
+}
+
+.content img, .content image {
+  margin: 0 10px 20px;
 }
 
 .content.single div {

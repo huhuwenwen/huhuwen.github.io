@@ -22,11 +22,11 @@ h6 {
   font-family: "Merriweather", serif;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 450px) {
   header,
   main,
   footer {
-    padding: 20px 40px 0;
+    padding: 20px 20px 0;
   }
 }
 
